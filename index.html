@@ -203,16 +203,19 @@
        <div class="bg-slate-200">
         <!-- 1. hero-section -->
          <div class="hero pt-10">
-            <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-x-0">
               <img
                 src="./assets/Rectangle.png"
-                class="max-w-sm rounded-lg"
+                class="max-w-sm lg:max-w-xl rounded-lg"
               />
+              <!-- text & card body container -->
               <div class="w-1/2 space-y-5 pt-5">
                 <div class="relative hidden lg:flex">
-                  <img src="./assets/Vector.png" alt="" class="absolute -top-10 -left-14"></div>
-                <!-- about-us-btn -->
-                <button class="btn btn-primary rounded-full px-4 bg-white shadow-none font-bold">
+                  <img src="./assets/Vector.png" alt="" class="absolute -top-10 -left-14">
+                </div>
+                <!-- about-us-btn div -->
+                 <div class="flex justify-center items-center lg:block">
+                  <button class="btn btn-primary rounded-full px-4 bg-white shadow-none font-bold">
                   <svg 
                   xmlns="http://www.w3.org/2000/svg" fill="none" 
                   viewBox="0 0 24 24" 
@@ -224,14 +227,19 @@
                     d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                   </svg>    
                   About Us
-                </button>
+                  </button>
+                 </div>
+                
                 <h1 class="text-5xl font-bold text-center lg:text-left">We design thoughtful, liveable spaces</h1>
                 <p class="py-6 text-center lg:text-left">
                   The barn house captivates with its blend of rustic charm and <br>
                   modern sophistication, featuring weathered wood, sleek metal accents.
                 </p>
-                <!-- card-1 -->
-                <div class="card lg:w-[520px] md:w-[250px] bg-base-100 card-md shadow-sm">
+                
+                <!-- card 1 & 2 container -->
+                 <div class="flex lg:block flex-col justify-center items-center">
+                  <!-- card-1 -->
+                   <div class="card w-[350px] lg:w-[520px] bg-base-100 card-md shadow-sm">
                   <div class="flex space-x-6 p-4"> 
                     <img 
                     src="./assets/commercial.png" 
@@ -244,9 +252,9 @@
                       <p class="">The barn house captivates with its blend of rustic charm and modern.</p>
                     </div>
                   </div>
-                </div>
-                <!-- card-2 -->
-                <div class="card lg:w-[520px] md:w-[250px] bg-base-100 card-md shadow-sm mt-4">
+                   </div>
+                  <!-- card-2 -->
+                   <div class="card w-[350px] lg:w-[520px] bg-base-100 card-md shadow-sm mt-4">
                   <div class="flex space-x-6 p-4"> 
                     <img 
                     src="./assets/residential.png" 
@@ -259,7 +267,9 @@
                       <p class="">The barn house captivates with its blend of rustic charm and modern.</p>
                     </div>
                   </div>
-                </div>
+                   </div>
+                 </div>
+                
               </div>
             </div>
           </div> <!-- ✅ Close hero -->
@@ -503,8 +513,8 @@
                </div>
              </div> <!-- latest-works-card-container- ends here -->
 
-             <!-- 5. Articles and News -->
-              <div class="pb-16">
+            <!-- 5. Articles and News -->
+             <div class="pb-16">
                 <!-- Articles and News text section -->
                  <div class="flex flex-col justify-center items-center gap-4 pt-10 w-auto lg:w-1/2 mx-auto">
                   <button class="btn btn-primary p-4 rounded-full bg-[rgba(171,239,95,0.2)] shadow-none font-bold">
@@ -666,12 +676,84 @@
                         </div>
                       </div>
                     </div>
-                  </div> <!-- article and news end here  -->
-             
-              </div> <!-- ✅ Close bg-slate-200 container -->
 
-            <!-- 6. discuss -->
-             <div class="bg-[url('./assets/bg.jpg')] bg-cover bg-center min-h-screen mt-10">
+                  </div> <!-- article and news end here  -->
+                  
+             </div> <!-- ✅ Close bg-slate-200 container -->
+
+            <!-- 6. excetional section/ our engineers -->
+             <section class="my-24 space-y-6">
+              <h2 class="text-4xl font-bold text-dark-04 text-center">Our Team Members
+              </h2>
+              <p class="text-dark-02 w-full lg:w-1/2 mx-auto px-10 text-center">Our team members are dedicated professionals with diverse skills in project management, architecture, and civil engineering. Together, they collaborate seamlessly to deliver innovative, efficient, and reliable solutions, ensuring every project meets the highest standards of quality and excellence.</p>
+              
+              <!-- cards-container -->
+               <div class="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
+                <!-- cards-1 -->
+                 <div class="card bg-base-100 w-80 border rounded-xl">
+                  <figure class="my-5">
+                  <div class="avatar">
+                    <div class="w-40 rounded-full">
+                      <img src="./assets/engineer1.jpeg" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                  </figure>
+                 <div class="card-body text-center">
+                  <p class="text-txt">Slate helps you see how 
+                    many more days you need 
+                    to work to reach your financial 
+                    goal for the month and year.
+                  </p>
+                  
+                  <p class="card-title text-name text-sm font-bold justify-center">Mark Towen</p>
+                  <p class="card-title text-designation text-sm justify-center text-dark-03">Project Incharge</p>
+                 </div>
+                 </div>
+                <!-- cards-2 -->
+                 <div class="card bg-base-100 w-80 border rounded-xl">
+                  <figure class="my-5">
+                   <div class="avatar">
+                    <div class="w-40 rounded-full">
+                      <img src="./assets/engineer2.jpeg" class="h-full w-full object-cover" />
+                    </div>
+                   </div>
+                  </figure>
+                <div class="card-body text-center">
+                  <p class="text-txt">Slate helps you see how 
+                    many more days you need 
+                    to work to reach your financial 
+                    goal for the month and year.
+                  </p>
+                  
+                  <p class="card-title text-name text-sm justify-center font-bold">John Wick</p>
+                  <p class="card-title text-designation text-sm justify-center text-dark-03">Architect</p>
+                </div>
+                 </div>
+                <!-- cards-3 -->
+                 <div class="card bg-base-100 w-80 border rounded-xl">
+                  <figure class="my-5">
+                  <div class="avatar">
+                    <div class="w-40 rounded-full">
+                      <img src="./assets/engineer3.jpeg" />
+                    </div>
+                  </div>
+                  </figure>
+                <div class="card-body text-center">
+                  <p class="text-txt">Slate helps you see how 
+                    many more days you need 
+                    to work to reach your financial 
+                    goal for the month and year.
+                  </p>
+                  
+                  <p class="card-title text-name text-sm justify-center font-bold">Borris Johnson</p>
+                  <p class="card-title text-designation text-sm justify-center text-dark-03">Civil Engineer</p>
+                </div>
+                 </div>
+               </div>
+             </section>
+
+            <!-- 7. discuss -->
+             <div class="bg-[url('./assets/bg.jpg')] bg-cover bg-center mt-10 py-16">
               <!-- text-container -->
                <div class="flex flex-col justify-center items-center gap-4 pt-10 w-auto lg:w-1/2 mx-auto">
                 <!-- btn -->
@@ -699,26 +781,28 @@
                    <div class="flex flex-col lg:flex-row justify-center items-center gap-3 pb-5">
                     
                     <label class="label"></label>
-                    <input type="text" class="input rounded-full px-4" placeholder="First Name*" />
+                    <input type="text" class="input text-[16px] rounded-full px-4" placeholder="First Name*" />
 
                     <label class="label"></label>
-                    <input type="text" class="input rounded-full px-4" placeholder="Last Name*" />
-                    
+                    <input type="text" class="input text-[16px] rounded-full px-4" placeholder="Last Name*" />
                    </div>
                    
                    <!-- 2nd row -->
                     <div class="flex flex-col lg:flex-row justify-center items-center gap-3 pb-5">
                      <label class="label"></label>
-                     <input type="number" class="input rounded-full px-4" placeholder="Phone Numner*" />
+                     <input type="number" class="input text-[16px] rounded-full px-4" placeholder="Phone Numner*" />
 
                      <label class="label"></label>
-                     <input type="email" class="input rounded-full px-4" placeholder="Email*" />
+                     <input type="email" class="input text-[16px] rounded-full px-4" placeholder="Email*" />
                     </div>
 
                     <!-- message -->
                      <div class="flex flex-col justify-center items-center mx-auto">
                       <label class="label"></label>
-                      <input type="text" class="input rounded-xl px-4 h-[240px] w-80 lg:w-[670px] " placeholder="Write your message here" />
+                      <textarea
+                      class="textarea text-[16px] rounded-xl px-4 pt-4 h-[240px] w-80 lg:w-[670px]"
+                      placeholder="Write your message here"
+                      ></textarea>
                      </div>
 
                     <button class="w-80 lg:w-[677px] mx-auto btn mt-4 text-lg font-extrabold rounded-full bg-btn-primary py-6 px-5">
